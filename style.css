@@ -1,0 +1,181 @@
+CSS---
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background: url('img/hero.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 3em;
+    background-color: black;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    background-color: black;
+}
+}
+
+.btn-book-now {
+    background-color: #f1c40f;
+    color: #333;
+    padding: 50px 60px;
+    border: none;
+    cursor: pointer;
+    font-size: 100px;
+}
+
+.btn-book-now:hover {
+    background-color: #e67e22;
+}
+.rooms{
+    background-color: grey;
+}
+
+.rooms, .services, .contact, .login {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.room-card {
+    display: inline-block;
+    width: 30%;
+    margin: 20px;
+    text-align: center;
+    background: #f7f7f7;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.room-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.room-card h3 {
+    font-size: 1.5em;
+    margin-top: 15px;
+}
+
+.room-card p {
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+.service {
+    background-color: white;
+    display: inline-block;
+    width: 30%;
+    margin: 20px;
+}
+.service img{
+    width: 200px;
+    height: 200px;
+}
+
+.form-box {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(36, 67, 40, 0.8);
+    padding: 15px;
+    border-radius: 8px;
+    width: 500px;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.radio-group {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+input[type="radio"] {
+    margin-right: 8px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 17px;
+    color: black;
+    font-weight: 600;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+}
+
+ .button {
+    background-color: #368b44;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 15px;
+    transition: .2s linear;
+}
+
+.button:hover {
+    background-color: #0a6808;
+    border: none;
+    transform: translateY(-10px);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

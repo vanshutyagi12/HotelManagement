@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Paradise Hotel</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+               
+            </ul>
+        </nav>
+    </header>
+    <script src="script.js"></script>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Welcome to Our Luxury Hotel</h2>
+            <p>Book a comfortable stay with us, where luxury meets convenience.</p>
+            <button class="btn-book-now" onclick="window.location.href ='https://docs.google.com/forms/d/e/1FAIpQLSfoJiAhNuvpweyzP_wOT-G52QVCwcZsbMyNbFvcbfggHM9wKg/viewform?usp=sharing'">Book Now</button>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section id="rooms" class="rooms">
+        <h2>Our Rooms</h2>
+        <div class="room-card">
+            <img src="img/room1.jpg" alt="Single Room">
+            <h3>Single Room</h3>
+            <p>A cozy room for one guest with modern amenities.</p>
+            <button class="button" value="Open Window" onclick="window.location.href ='https://docs.google.com/forms/d/e/1FAIpQLSfoJiAhNuvpweyzP_wOT-G52QVCwcZsbMyNbFvcbfggHM9wKg/viewform?usp=sharing'">Book Now</button>
+        </div>
+        <div class="room-card">
+            <img src="img/room2.jpg" alt="Double Room">
+            <h3>Double Room</h3>
+            <p>Perfect for couples, featuring a king-size bed and scenic views.</p>
+            <button class="button" onclick="window.location.href ='https://docs.google.com/forms/d/e/1FAIpQLSfoJiAhNuvpweyzP_wOT-G52QVCwcZsbMyNbFvcbfggHM9wKg/viewform?usp=sharing'">Book Now</button>
+        </div>
+        <div class="room-card">
+            <img src="img/room3.jpg" alt="Suite Room">
+            <h3>Suite</h3>
+            <p>Luxurious suite with a living area, ideal for families or business travelers.</p>
+            <button class="button" onclick="window.location.href ='https://docs.google.com/forms/d/e/1FAIpQLSfoJiAhNuvpweyzP_wOT-G52QVCwcZsbMyNbFvcbfggHM9wKg/viewform?usp=sharing'">Book Now</button>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services" style="background-color: #333;">
+        <h2>Our Services</h2>
+        <div class="service">
+            <img src="img/free-wifi.jpg" alt="Free Wi-Fi">
+            <h3>Free Wi-Fi</h3>
+            <p>Stay connected with high-speed internet throughout the hotel.</p>
+        </div>
+        <div class="service">
+            <img src="img/restaurant.jpg" alt="restaurant">
+            <h3>Restaurant</h3>
+            <p>Enjoy gourmet meals at our in-house restaurant.</p>
+        </div>
+        <div class="service">
+            <img src="img/spa.jpg" alt="Spa & Wellness">
+            <h3>Spa & Wellness</h3>
+            <p>Relax and unwind with our luxury spa treatments.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact" style="background-color: grey;">
+        <h2>Contact Us</h2>
+       <form method="POST" action="mailto:vt7027601786@gmail.com" enctype="multipart/form-data">
+            <label for="uname">
+                <i class="fa fa-solid fa-user"></i>
+                Name
+            </label>
+            <input type="text" id="uname" 
+                   name="uname" required>
+
+            <label for="email">
+                <i class="fa fa-solid fa-envelope"></i>
+                Email Address
+            </label>
+            <input type="email" id="email" 
+                   name="email" required>
+
+            <label for="phone">
+                <i class="fa-solid fa-phone"></i>
+                Phone No
+            </label>
+            <input type="tel" id="phone" 
+                   name="phone" required>
+
+            <label>
+                <i class="fa-solid fa-face-smile"></i>
+                Do you satisfy with our service?
+            </label>
+            <div class="radio-group">
+                <input type="radio" id="yes" 
+                       name="satisfy" value="yes" checked>
+                <label for="yes">Yes</label>
+
+                <input type="radio" id="no" 
+                       name="satisfy" value="no">
+                <label for="no">No</label>
+            </div>
+
+            <label for="msg">
+                <i class="fa-solid fa-comments" 
+                   style="margin-right: 3px;"></i>
+                Write your Suggestions:
+            </label>
+            <textarea id="msg" name="msg" 
+                      rows="4" cols="10" required>
+            </textarea>
+            <button type="submit" class="button">
+                Submit
+            </button>
+        </form>
+    </section>
+
+    <!-- Login Section -->
+    <!--<section id="login" class="login">
+        <h2>Login to Manage Your Bookings</h2>
+        <form id="login-form">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+    </section>-->
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Hotel Management. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
